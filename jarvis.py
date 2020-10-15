@@ -36,7 +36,6 @@ def jarvisResponse(audio):
         os.system('say'+ audio)
 
 
-
 # define the countdown func. 
 def countdown(t): 
     while t: 
@@ -124,3 +123,4 @@ def takeCommand():
     return query
 
 def sendmail(to, content):
+
