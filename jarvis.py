@@ -458,6 +458,21 @@ if __name__ == "__main__":
   
         elif "i love you" in query: 
             speak("It's hard to understand") 
+                
+        elif "send message " in query: 
+                # You need to create an account on Twilio to use this service 
+                account_sid = 'Account Sid key'
+                auth_token = 'Auth token'
+                client = Client(account_sid, auth_token) 
+  
+                message = client.messages \ 
+                                .create( 
+                                    body = takeCommand(), 
+                                    from_='Sender No', 
+                                    to ='Receiver No'
+                                ) 
+  
+                print(message.sid) 
   
         elif "what is" in query or "who is" in query: 
               
@@ -471,3 +486,4 @@ if __name__ == "__main__":
                 speak (next(res.results).text) 
             except StopIteration: 
                 print ("No results") 
+            
