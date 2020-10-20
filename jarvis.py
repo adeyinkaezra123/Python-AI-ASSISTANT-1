@@ -429,3 +429,21 @@ if __name__ == "__main__":
             print('''Your device has been running on ''' + percent +" % " +"battery")
             speak('I still have {} percent of battery left!'.format(percent))
         # elif 'use keyboard'in query:
+              
+        elif 'lock window' in query: 
+                speak("locking the device") 
+                ctypes.windll.user32.LockWorkStation() 
+  
+        elif 'shutdown system' in query: 
+                speak("Hold On a Sec ! Your system is on its way to shut down") 
+                subprocess.call('shutdown / p /f') 
+                  
+        elif 'empty recycle bin' in query: 
+            winshell.recycle_bin().empty(confirm = False, show_progress = False, sound = True) 
+            speak("Recycle Bin Recycled") 
+  
+        elif "don't listen" in query or "stop listening" in query: 
+            speak("for how much time you want to stop jarvis from listening commands") 
+            a = int(takeCommand()) 
+            time.sleep(a) 
+            print(a) 
