@@ -1,0 +1,27 @@
+on:
+
+  schedule:
+
+  - cron: '0 2 * * *' # every day at noon
+
+jobs:
+
+ backfill-commits:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: bcanseco/github-contribution-graph-action@v2
+
+      env:
+
+        GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+
+        GIT_EMAIL: yuourmail@sample.com
+
+        MAX_DAYS: 365
+
+        MIN_COMMITS_PER_DAY: 25
+
+        MAX_COMMITS_PER_DAY: 75
