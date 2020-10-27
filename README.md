@@ -1,4 +1,5 @@
 # Python-AI-ASSISTANT-1
+I always thought that if I could have my own A.I. just like Jarvis, you all must have thought the same.
 Have you ever wondered how cool it would be to have your own A.I. assistant? Imagine how easier it would be to send emails without typing a single word, searching on wikipedia without actually opening the web browsers, and performing many other daily tasks with the help of a single voice command.
 In this tutorial, you are gonna learn how to code and build your own A.I. voice assistant in Python.
 What can this A.I. assistant do for YOU?
