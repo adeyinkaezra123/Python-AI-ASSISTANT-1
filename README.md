@@ -8,5 +8,5 @@ It can do Wikipedia searches for you.
 It can open websites like Google, Youtube, etc., in a web browser.
 It can open your code editor or IDE with a single voice command.
 
-The implemented voice assistant can perform the following task it can open YouTube, Gmail, Google chrome and stack overflow. Predict current time, take a photo, search Wikipedia to abstract required data, predict weather in different cities, get top headline news from Times of India and can answer computational and geographical questions too.
-Enough talk! Let’s start building our very own A.I assistant.
+The implemented voice assistant can perform the following task it can open YouTube, Gmail, Google chrome and stack overflow. Predict current time, take a photo, search Wikipedia to abstract required data, predict weather in different cities, get top headline news from Newspapers and can answer computational and geographical questions too.
+Enough talk! Let’s start building our very own A.I assistant.:sunglasses:
